@@ -1,0 +1,173 @@
+body
+{
+	font-family: 'Montserrat', sans-serif;
+}
+header
+{
+    background: linear-gradient(black,black); /*é a cor do fundo do cabeçalho*/
+    padding: 20px 0; /*espaçamento interno do cabeçalho*/
+	height: 100px;
+}
+.logo-princip
+{
+	width: 80px;
+}
+.caixa
+{
+   /**/ position: relative; /*posição relativa*/
+        width: 940px;/*tamanho da caixa do cabeçalho*/
+		height: 100px;
+        margin: 0 auto; /* centralizar conteudo usando margem automatica */
+    /* posição do cabeçalho*/
+}
+nav
+{
+    /**/position: absolute; /*posição absoluta*/
+        top: 50px; /* distancia de 110px do top*/
+        right: 0;   /* distancia de 0 do lado direito*/
+    /* posição do menu principal*/
+    
+}
+nav li
+{
+    dispLay: inline; /* define que a lista do menu  fica um do lado da outra */
+    margin: 10px 0px 0px 20px; /* cria uma margem ao lado esquerdo de 15% */
+    
+
+}
+nav a 
+{
+    text-transform: uppercase; /*deixa o texto em letras maiusculas */
+    color: white; /*cor do texto */
+    font-weight: bold; /* NEGRITO */
+    font-size: 22px;   /*tamanho da fonte*/
+    text-decoration: none; /* retira a decoração padrão do texto */
+    transition: 700ms;
+}
+
+nav a:hover /* hover pega a interação do usuario quando o mouse estiver em cima dos links do menude navegação*/
+{
+		font-size: 25px;
+        color: #c78c19; /*muda a cor do texto*/
+        text-decoration: underline; /*volta a decoração do texto enquanto o mouse estiver em cima */
+        
+
+}
+
+.tabela
+{
+    width: 100%;
+    background: linear-gradient(white,black);
+}
+.outro-contato
+{
+    padding: 80px;
+    width: 100%;
+    background: linear-gradient(rgb(121,121,121),black);
+    
+}
+
+.outro-contato-imagem
+{
+    
+    width: 5%;
+    display: inline;
+}
+
+
+
+
+
+
+footer
+{
+    padding: 40px 0; /* margem interna 40px para cima e para baixo e ZERO para as laterais*/
+    text-align: center; /*alinhamento do texto copyrigth */
+    /* background: url("../img/bg.jpg"); /* para adicionar uma imagem ao background */
+    background: black;
+}
+.copyrigth
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 15px;
+
+}
+
+main
+{
+    width: 100% ;
+    background: linear-gradient(white,rgb(121, 121, 121));
+    padding: 50px;
+    
+}
+
+.conteudo
+{
+    width: 940px;
+    margin: 0 auto;
+}
+form
+{
+    margin: 40px 0;
+}
+
+form label, form legend
+{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao
+{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    
+}
+.checkbox
+{
+    
+ margin: 20px 0;   
+}
+
+.enviar
+{
+    width: 40%;
+    padding: 15px  0 ;
+    background: rgb(116, 116, 116);
+    
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover
+{
+    background: rgb(252, 172, 0);
+    transform: scale(1.2);
+}
+
+table
+{
+    margin: 20px 0  40px;
+}
+
+thead
+{
+    background: #333333;
+    color: white;
+    font-weight: bold;
+}
+td, th
+{
+    border: 1px solid black;
+    padding: 8px  15px;
+}
+

@@ -1,0 +1,217 @@
+body
+{
+	font-family: 'Montserrat', sans-serif;
+}
+header
+{
+    background: linear-gradient(black,black); /*é a cor do fundo do cabeçalho*/
+    padding: 20px 0; /*espaçamento interno do cabeçalho*/
+	height: 100px;
+}
+.logo-princip
+{
+	width: 80px;
+}
+.caixa
+{
+   /**/ position: relative; /*posição relativa*/
+        width: 940px;/*tamanho da caixa do cabeçalho*/
+		height: 100px;
+        margin: 0 auto; /* centralizar conteudo usando margem automatica */
+    /* posição do cabeçalho*/
+}
+nav
+{
+    /**/position: absolute; /*posição absoluta*/
+        top: 50px; /* distancia de 110px do top*/
+        right: 0;   /* distancia de 0 do lado direito*/
+    /* posição do menu principal*/
+    
+}
+nav li
+{
+    dispLay: inline; /* define que a lista do menu  fica um do lado da outra */
+    margin: 10px 0px 0px 20px; /* cria uma margem ao lado esquerdo de 15% */
+    
+
+}
+nav a 
+{
+    text-transform: uppercase; /*deixa o texto em letras maiusculas */
+    color: white; /*cor do texto */
+    font-weight: bold; /* NEGRITO */
+    font-size: 22px;   /*tamanho da fonte*/
+    text-decoration: none; /* retira a decoração padrão do texto */
+    transition: 700ms;
+}
+
+nav a:hover /* hover pega a interação do usuario quando o mouse estiver em cima dos links do menude navegação*/
+{
+		font-size: 25px;
+        color: #c78c19; /*muda a cor do texto*/
+        text-decoration: underline; /*volta a decoração do texto enquanto o mouse estiver em cima */
+        
+
+}
+
+
+.div-produtos
+{
+    width: 100%;
+    background: linear-gradient(white,black);
+}
+
+
+
+.produtos
+{
+    width: 940px; /* tamanho das imagens */
+    
+    margin: 0 auto; /* margem */
+    padding: 100px 0px; /*margem interna 50px sao as bases e ZERO é as laterais */
+    
+    
+}
+.produtos li
+{
+    text-align: center;  /*alinha o texto ao centro*/
+    display: inline-block;  /* faz com que o elemento oculpe apenas o espaço necessario assim podendo deixar um outro elemento do lado do outro*/
+    width: 30%;  /* define a largura do objeto*/
+    vertical-align: top; 
+    margin: 0 1.5%; /*margem porcentual*/
+    padding: 30px 20px;
+    box-sizing: border-box; /* como bota o conteudo do elemento para se comportar de acordo com a largura em porcentual que foi criado*/
+    border:2px solid #000000 ; /*para criar uma borda , 2px é o tamanho da linha, solid do tipo solido, #000000 é acor*/
+    border-radius: 15px;/*arrendodamento das bordas */
+    transition: 700ms;
+}
+.produtos li:hover /* hover pega a interação do usuario enquanto o mouse estiver em cima dos links do menude navegação*/
+{
+    border-color:#c78c19 ;
+    box-shadow: -10px -10px 10px 2px #000000;
+    background: rgb(211, 211, 211);
+    
+}
+.produtos li:active /*active pega a interação do usuario enquanto  o mouse estiver precionando */
+{
+    border-color: #cccccc;
+}
+
+.produtos h2
+{
+    font-size: 30px;
+    
+}
+
+.produtos li:hover h2
+{
+    
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.produtos li:hover .footer
+{
+    transition: 2000ms;
+}
+
+.produtos li:hover .produto-descricao
+{
+    font-size: 25px;
+}
+
+.produtos li:hover .produto-preco
+{
+    font-size: 29px;
+}
+
+
+
+.produto-descricao
+{
+    font-size: 18px;
+    color: black;
+
+    
+}
+
+
+.produto-preco
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.produto-imagem
+{
+    width: 80%;
+
+}
+
+footer
+{
+    width: 100%;
+    position: absolute;
+    padding: 40px 0; /* margem interna 40px para cima e para baixo e ZERO para as laterais*/
+    text-align: center; /*alinhamento do texto copyrigth */
+    /* background: url("../img/bg.jpg");  para adicionar uma imagem ao background */
+    background: black;
+    
+}
+.copyrigth
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 15px;
+
+}
+
+
+@media screen and (max-width: 480px)
+{
+	.logo-princip
+	{
+		width: 20%;
+	}
+    
+
+	.caixa, .principal
+	{
+		width: 80%;
+	}
+    .produtos
+    {
+        margin: 40px;
+        width: 90%;
+    }
+
+    .produtos li
+    {
+        width: 80%;
+        display: block;
+        margin-top: 30px;
+        
+    }
+
+	
+	 h1
+	 {	
+		 text-align: center;
+
+	 }
+
+	 nav
+	 {
+         width: 100%;
+		 position: static;
+	 }
+
+     .footer
+     {
+         width: 100%;
+     }
+	 
+}
